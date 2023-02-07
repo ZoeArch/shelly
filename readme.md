@@ -1,4 +1,4 @@
-# Shelly Cursed shell identifier
+# Shelly - Cursed shell identifier
 the goal of this project is to create a utility capable of identifying and posssibly creating cursed tank shells.
 
 ## Step 1
@@ -10,12 +10,14 @@ Example:
 
 APBCFSHESHDS -> AP BC FS HE SH DS
 
-|AP     |Armor Piercing     |
-|BC     |Balistic Capped    |
-|FS     |Fin Stabilised     |
-|HE     |High explosive     |
-|SH     |Squash Head        |
-|DS     |Discarding Sabot   |
+|Shorthand  | Full name         |
+|---        |---                |
+|AP         |Armor Piercing     |
+|BC         |Balistic Capped    |
+|FS         |Fin Stabilised     |
+|HE         |High explosive     |
+|SH         |Squash Head        |
+|DS         |Discarding Sabot   |
 
 Armor Piercing Balisitc Capped Fin satbilised High Explosive Squash Head Discarding Sabot Shell
 
