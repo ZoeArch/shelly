@@ -1,4 +1,5 @@
 # Shelly Cursed shell identifier
+the goal of this project is to create a utility capable of identifying and posssibly creating cursed tank shells.
 
 ## Step 1
 - get list of shell parts
@@ -18,9 +19,9 @@ APBCFSHESHDS -> AP BC FS HE SH DS
 
 Armor Piercing Balisitc Capped Fin satbilised High Explosive Squash Head Discarding Sabot Shell
 
-## step 2 
+## step 2 (future)
 - write gui
 - add shell builder
 
-## step 3
+## step 3 (very much optional)
 - reddit bot
