@@ -1,26 +1,65 @@
-import re
-
 user_input = input("Enter a string: ")
 print("Input string:", user_input)
+explanation = ""
 
-# compile a regular expression pattern into a regular expression object
-p = re.compile("AP") # possibly replace ap with a variable? give the funtction an array and then automatically have the function run through it 
+while len(user_input) > 0:
+    if user_input.startswith("HE"):
+        info_out ="High Explosive "
+        user_input = user_input[2:]        
+    elif user_input.startswith("BC"):
+        info_out ="Balistic Capped "
+        user_input = user_input[2:]
+    elif user_input.startswith("AP"):
+        info_out ="Armour Piercing "
+        user_input = user_input[2:] 
+    elif user_input.startswith("AC"):
+        info_out ="Anti Concrete "
+        user_input = user_input[2:]        
+    elif user_input.startswith("DS"):
+        info_out ="Discarding Sabot "
+        user_input = user_input[2:]
+    elif user_input.startswith("FS"):
+        info_out ="Fin Stabilised "
+        user_input = user_input[2:]        
+    elif user_input.startswith("TF"):
+        info_out ="Time Fuse "
+        user_input = user_input[2:]        
+    elif user_input.startswith("SH"):
+        info_out ="Squash Head "
+        user_input = user_input[2:]        
+    elif user_input.startswith("AT"):
+        info_out ="Anti Tank "
+        user_input = user_input[2:]        
+    elif user_input.startswith("C"):
+        info_out ="Capped "
+        user_input = user_input[1:]        
+    elif user_input.startswith("CR"):
+        info_out ="Composite Rigid "
+        user_input = user_input[2:]        
+    elif user_input.startswith("VOG"):
+        info_out ="Anti personnel Fragmentation "
+        user_input = user_input[3:]        
+    elif user_input.startswith("GM"):
+        info_out ="Guided Missile "
+        user_input = user_input[2:]        
+    elif user_input.startswith("R"):
+        info_out ="Rocket Assisted "
+        user_input = user_input[1:]        
+    elif user_input.startswith("OTA"):
+        info_out ="Overfly Top Attack "
+        user_input = user_input[3:]        
+    elif user_input.startswith("SAM"):
+        info_out ="Surface to Air Missile "
+        user_input = user_input[3:]        
+    elif user_input.startswith("HV"):
+        info_out ="High Velocity "
+        user_input = user_input[2:]        
+    elif user_input.startswith("DP"):
+        info_out ="Dual Purpose "
+        user_input = user_input[2:]               
+    else:
+        print("lmao error")
+        user_input = user_input[1:]
+    explanation += info_out
 
-# use the match method to check if the pattern is at the start of the string
-m = p.match(user_input)
-
-# check if a match was found
-if m:
-    print("AP found at the start of the string.")
-else:
-    print("AP not found at the start of the string.")
-
-def cleave(s, num_chars):
-    return s[num_chars:]
-
-def check(string, list):
-    i = 0
-    while (i > len(list)): 
-        p = re.compile(list[i])
-        i +=1
-        p.match(string)
+print(explanation)
