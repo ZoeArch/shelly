@@ -16,7 +16,6 @@
 |R          |Rocket Assisted|
 |OTA        |Overfly Top Attack |
 |SAM        |Surface to Air Missile         |
-
 |---        |---                |
 |HV         |High Velocity      |
 |DP         |Dual Purpose       |
